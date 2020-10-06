@@ -1,0 +1,414 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Coder Foundry MiniSite Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+        <div class="container">
+            <a class="navbar-brand" href="/Index.html">Challenge Name Here</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/Index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Solve.html">Solve</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Code.html">Code</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Git</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog Post/YouTube Explanation</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1 class="mt-5">This Page shows your JS code</h1>
+                <p class="lead">You need to use a Syntax Highlighter - Prism.js is default</p>
+                <ul class="list-unstyled">
+                    <li>Code with highlighter</li>
+                    <li>Will display on this page</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--Here is the HTML structure that my function will run in-->
+    <!--<section>-->
+    <!--Container 1 (Addition)-->
+    <!--<div class="container">
+        <div class="row">
+            1)-->
+    <!--Input Field 1-->
+    <!--<div class="col">
+        <input type="text" id="num1" />
+    </div>
+    +-->
+    <!--Input Field 2-->
+    <!--<div class="col">
+        <input type="text" id="num2" />
+    </div>-->
+    <!--Equals Button-->
+    <!--<div class="col text-center">
+        <button onclick="sumOfNumbers()">=</button>
+    </div>
+    <br />
+    <br />-->
+    <!--Where my answer should appear-->
+    <!--<div class="col">
+                    <span id="result"></span>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function sumOfNumbers() {
+                let num1 = Number(document.getElementById("num1").value);
+                let num2 = Number(document.getElementById("num2").value);
+                let result = num1 + num2;
+                let spanEl = document.getElementById("result");
+                spanEl.innerHTML = `<b>${result}</b>`;
+            }
+        </script>
+
+    </section>-->
+
+    <section>
+        <!--Container 1 (Addition)-->
+        <div class="container">
+            <b>1) Write a program that accepts a series of at least 5 numbers from the user and performs the following actions:</b>
+            <ul>
+                <li>A) Determine which number is the least</li>
+                <li>B) Determine which number is the greatest</li>
+                <li>C) Determine the mean of the numbers</li>
+                <li>D) Determine the sum of all the numbers</li>
+                <li>E) Determine the product of all the numbers</li>
+            </ul>
+            <!--Problem A-->
+            <div class="container">
+                <div class="row">
+                    A)
+                    <!--Input Field 1-->
+                    <div class="col">
+                        <input type="text" id="IFa1" />
+                    </div>
+
+                    <!--Input Field 2-->
+                    <div class="col">
+                        <input type="text" id="IFa2" />
+                    </div>
+
+                    <!--Input Field 3-->
+                    <div class="col">
+                        <input type="text" id="IFa3" />
+                    </div>
+
+                    <!--Input Field 4-->
+                    <div class="col">
+                        <input type="text" id="IFa4" />
+                    </div>
+
+                    <!--Input Field 5-->
+                    <div class="col">
+                        <input type="text" id="IFa5" />
+                    </div>
+
+                    <!--Equals Button-->
+                    <div class="col text-center">
+                        <button onclick="leastOfNumbers()">=</button>
+                    </div>
+
+                    <!--Where my answer should appear-->
+                    <div class="col">
+                        <span id="resultOfA"></span>
+                    </div>
+                </div>
+            </div>
+            <!--Take this out later-->
+            <br />
+            <!--Problem B-->
+            <div class="container">
+                <div class="row">
+                    B)
+                    <!--Input Field 1-->
+                    <div class="col">
+                        <input type="text" id="IFb1" />
+                    </div>
+
+                    <!--Input Field 2-->
+                    <div class="col">
+                        <input type="text" id="IFb2" />
+                    </div>
+
+                    <!--Input Field 3-->
+                    <div class="col">
+                        <input type="text" id="IFb3" />
+                    </div>
+
+                    <!--Input Field 4-->
+                    <div class="col">
+                        <input type="text" id="IFb4" />
+                    </div>
+
+                    <!--Input Field 5-->
+                    <div class="col">
+                        <input type="text" id="IFb5" />
+                    </div>
+
+                    <!--Equals Button-->
+                    <div class="col text-center">
+                        <button onclick="greatestOfNumbers()">=</button>
+                    </div>
+
+                    <!--Where my answer should appear-->
+                    <div class="col">
+                        <span id="resultOfB"></span>
+                    </div>
+                </div>
+            </div>
+            <!--Take this out later-->
+            <br />
+
+            <!--Problem C-->
+            <div class="container">
+                <div class="row">
+                    C)
+                    <!--Input Field 1-->
+                    <div class="col">
+                        <input type="text" id="IFc1" />
+                    </div>
+
+                    <!--Input Field 2-->
+                    <div class="col">
+                        <input type="text" id="IFc2" />
+                    </div>
+
+                    <!--Input Field 3-->
+                    <div class="col">
+                        <input type="text" id="IFc3" />
+                    </div>
+
+                    <!--Input Field 4-->
+                    <div class="col">
+                        <input type="text" id="IFc4" />
+                    </div>
+
+                    <!--Input Field 5-->
+                    <div class="col">
+                        <input type="text" id="IFc5" />
+                    </div>
+
+                    <!--Equals Button-->
+                    <div class="col text-center">
+                        <button onclick="meanOfNumbers()">=</button>
+                    </div>
+
+                    <!--Where my answer should appear-->
+                    <div class="col">
+                        <span id="resultOfC"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!--Problem D-->
+            <div class="row">
+                D)
+                <!--Input Field 1-->
+                <div class="col">
+                    <input type="text" id="num1" />
+                </div>
+                +
+                <!--Input Field 2-->
+                <div class="col">
+                    <input type="text" id="num2" />
+                </div>
+                <!--Equals Button-->
+                <div class="col text-center">
+                    <button onclick="sumOfNumbers()">=</button>
+                </div>
+                <br />
+                <br />
+                <!--Where my answer should appear-->
+                <div class="col">
+                    <span id="result"></span>
+                </div>
+            </div>
+
+            <!--Problem E-->
+            <div class="row">
+                E)
+                <!--Input Field 1-->
+                <div class="col">
+                    <input type="text" id="num1" />
+                </div>
+                +
+                <!--Input Field 2-->
+                <div class="col">
+                    <input type="text" id="num2" />
+                </div>
+                <!--Equals Button-->
+                <div class="col text-center">
+                    <button onclick="sumOfNumbers()">=</button>
+                </div>
+                <br />
+                <br />
+                <!--Where my answer should appear-->
+                <div class="col">
+                    <span id="result"></span>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!--JS Scripts-->
+        
+        <script>
+        //Function A
+                function leastOfNumbers() {
+                    let a1 = Number(document.getElementById("IFa1").value)
+                    let a2 = Number(document.getElementById("IFa2").value)
+                    let a3 = Number(document.getElementById("IFa3").value)
+                    let a4 = Number(document.getElementById("IFa4").value)
+                    let a5 = Number(document.getElementById("IFa5").value)
+                    let resultOfA = Math.min(a1, a2, a3, a4, a5)
+                    let spanEl = document.getElementById("resultOfA");
+                    spanEl.innerHTML = `<b>${resultOfA}</b>`;
+                }
+
+        //Function B
+            function greatestOfNumbers() {
+                let b1 = Number(document.getElementById("IFb1").value)
+                let b2 = Number(document.getElementById("IFb2").value)
+                let b3 = Number(document.getElementById("IFb3").value)
+                let b4 = Number(document.getElementById("IFb4").value)
+                let b5 = Number(document.getElementById("IFb5").value)
+                let resultOfB = Math.max(b1, b2, b3, b4, b5)
+                let spanEl = document.getElementById("resultOfB");
+                spanEl.innerHTML = `<b>${resultOfB}</b>`;
+            }
+
+        //Function C
+            function meanOfNumbers() {
+                let c1 = Number(document.getElementById("IFc1").value);
+                let c2 = Number(document.getElementById("IFc2").value);
+                let c3 = Number(document.getElementById("IFc3").value);
+                let c4 = Number(document.getElementById("IFc4").value);
+                let c5 = Number(document.getElementById("IFc5").value);
+                let values = (c1, c2, c3, c4, c5);
+                let sum = values.sum
+                let avg = sum / values.length.value;
+                let resultOfC = avg;
+                let spanEl = document.getElementById("resultOfC");
+                spanEl.innerHTML = `<b>${resultOfC}</b>`;
+            }
+
+
+
+
+
+        </script>
+
+
+        <!--End of Function A-->
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <script>
+            function sumOfNumbers() {
+                let num1 = Number(document.getElementById("num1").value);
+                let num2 = Number(document.getElementById("num2").value);
+                let result = num1 + num2;
+                let spanEl = document.getElementById("result");
+                spanEl.innerHTML = `<b>${result}</b>`;
+            }
+        </script>
+
+    </section>
+
+
+
+
+
+    <!--Problem E-->
+    <!--<div class="row">
+        E)-->
+        <!--Input Field 1-->
+        <!--<div class="col">
+            <input type="text" id="num1" />
+        </div>
+        +-->
+        <!--Input Field 2-->
+        <!--<div class="col">
+            <input type="text" id="num2" />
+        </div>-->
+        <!--Equals Button-->
+        <!--<div class="col text-center">
+            <button onclick="sumOfNumbers()">=</button>
+        </div>
+        <br />
+        <br />-->
+        <!--Where my answer should appear-->
+        <!--<div class="col">
+            <span id="result"></span>
+        </div>
+    </div>-->
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+</body>
+
+</html>
