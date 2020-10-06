@@ -54,8 +54,8 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h1 class="mt-5">This Page shows your JS code</h1>
-                <p class="lead">You need to use a Syntax Highlighter - Prism.js is default</p>
+                <h1 class="mt-5">Javascript Exercises</h1>
+                <p class="lead"><!--You need to use a Syntax Highlighter - Prism.js is default--></p>
                 <ul class="list-unstyled">
                     <li>Code with highlighter</li>
                     <li>Will display on this page</li>
@@ -64,48 +64,8 @@
         </div>
     </div>
 
-    <!--Here is the HTML structure that my function will run in-->
-    <!--<section>-->
-    <!--Container 1 (Addition)-->
-    <!--<div class="container">
-        <div class="row">
-            1)-->
-    <!--Input Field 1-->
-    <!--<div class="col">
-        <input type="text" id="num1" />
-    </div>
-    +-->
-    <!--Input Field 2-->
-    <!--<div class="col">
-        <input type="text" id="num2" />
-    </div>-->
-    <!--Equals Button-->
-    <!--<div class="col text-center">
-        <button onclick="sumOfNumbers()">=</button>
-    </div>
-    <br />
-    <br />-->
-    <!--Where my answer should appear-->
-    <!--<div class="col">
-                    <span id="result"></span>
-                </div>
-            </div>
-        </div>
-
-        <script>
-            function sumOfNumbers() {
-                let num1 = Number(document.getElementById("num1").value);
-                let num2 = Number(document.getElementById("num2").value);
-                let result = num1 + num2;
-                let spanEl = document.getElementById("result");
-                spanEl.innerHTML = `<b>${result}</b>`;
-            }
-        </script>
-
-    </section>-->
-
+    <!--HTML for Question 1-->
     <section>
-        <!--Container 1 (Addition)-->
         <div class="container">
             <b>1) Write a program that accepts a series of at least 5 numbers from the user and performs the following actions:</b>
             <ul>
@@ -199,7 +159,6 @@
             </div>
             <!--Take this out later-->
             <br />
-
             <!--Problem C-->
             <div class="container">
                 <div class="row">
@@ -242,7 +201,6 @@
             </div>
             <!--Take this out later-->
             <br />
-
             <!--Problem D-->
             <div class="container">
                 <div class="row">
@@ -325,157 +283,196 @@
                     </div>
                 </div>
             </div>
-            <!--Take this out later-->
-            <br />
+
+        </div>
+    </section>
+
+    <!--Take this out later-->
+    <br />
+
+    <!--HTML for Question 2-->
+    <section>
+        <div class="container">
+            <b>2) Write a program tha calculates the factorial of a number. The factorial of a non-negative integer <em>n</em> is the product of all positive integers less than or equal to <em>n</em>. <br />(Ex. 5! = 5x4x3x2x1 = 120)</b>
+            <div class="row">
+                <!--Input Field-->
+                <div class="col">
+                    <input type="text" id="IFQ2" />
+                </div>
+                <!--Equals Button-->
+                <div class="col text-center">
+                    <button onclick="factorialOfANumber()">=</button>
+                </div>
+                <!--Where my answer should appear-->
+                <div class="col">
+                    <span id="resultOfQ2"></span>
+                </div>
+            </div>
         </div>
 
 
 
+       
+    </section>
 
-        <!--JS Scripts-->
-        
-        <script>
-        //Function A
-                function leastOfNumbers() {
-                    let a1 = Number(document.getElementById("IFa1").value)
-                    let a2 = Number(document.getElementById("IFa2").value)
-                    let a3 = Number(document.getElementById("IFa3").value)
-                    let a4 = Number(document.getElementById("IFa4").value)
-                    let a5 = Number(document.getElementById("IFa5").value)
-                    let resultOfA = Math.min(a1, a2, a3, a4, a5)
-                    let spanEl = document.getElementById("resultOfA");
-                    spanEl.innerHTML = `<b>${resultOfA}</b>`;
-                }
+    <!--Take this out later-->
+    <br />
 
-        //Function B
-            function greatestOfNumbers() {
-                let b1 = Number(document.getElementById("IFb1").value)
-                let b2 = Number(document.getElementById("IFb2").value)
-                let b3 = Number(document.getElementById("IFb3").value)
-                let b4 = Number(document.getElementById("IFb4").value)
-                let b5 = Number(document.getElementById("IFb5").value)
-                let resultOfB = Math.max(b1, b2, b3, b4, b5)
-                let spanEl = document.getElementById("resultOfB");
-                spanEl.innerHTML = `<b>${resultOfB}</b>`;
-            }
-
-        //Function C
-            function meanOfNumbers() {
-                let c1 = Number(document.getElementById("IFc1").value);
-                let c2 = Number(document.getElementById("IFc2").value);
-                let c3 = Number(document.getElementById("IFc3").value);
-                let c4 = Number(document.getElementById("IFc4").value);
-                let c5 = Number(document.getElementById("IFc5").value);
-                let entries = [c1, c2, c3, c4, c5];
-                //let sum = entries.reduce( );
-                let sum = entries.reduce(function(sum, secondParameter) {
-                    return sum += secondParameter;
-                });
-                let avg = sum / entries.length;
-                let resultOfC = avg;
-                let spanEl = document.getElementById("resultOfC");
-                spanEl.innerHTML = `<b>${resultOfC}</b>`;
-            }
-
-        //Function D
-            function sumOfNumbers() {
-                let d1 = Number(document.getElementById("IFd1").value);
-                let d2 = Number(document.getElementById("IFd2").value);
-                let d3 = Number(document.getElementById("IFd3").value);
-                let d4 = Number(document.getElementById("IFd4").value);
-                let d5 = Number(document.getElementById("IFd5").value);
-                let entries = [d1, d2, d3, d4, d5];
-                let sum = entries.reduce(function (sum, secondParameter) {
-                    return sum += secondParameter;
-                });
-                let resultOfD = sum;
-                let spanEl = document.getElementById("resultOfD");
-                spanEl.innerHTML = `<b>${resultOfD}</b>`;
-            }
-
-        //Function E
-            function productOfNumbers() {
-                let e1 = Number(document.getElementById("IFe1").value);
-                let e2 = Number(document.getElementById("IFe2").value);
-                let e3 = Number(document.getElementById("IFe3").value);
-                let e4 = Number(document.getElementById("IFe4").value);
-                let e5 = Number(document.getElementById("IFe5").value);
-                let entries = [e1, e2, e3, e4, e5];
-                let sum = entries.reduce(function (sum, secondParameter) {
-                    return sum *= secondParameter;
-                });
-                let resultOfE = sum;
-                let spanEl = document.getElementById("resultOfE");
-                spanEl.innerHTML = `<b>${resultOfE}</b>`;
-            }
-
-        </script>
-
-
-        <!--End of Function A-->
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <!--Example of simple function
-        
-        <script>
-            function sumOfNumbers() {
-                let num1 = Number(document.getElementById("num1").value);
-                let num2 = Number(document.getElementById("num2").value);
-                let result = num1 + num2;
-                let spanEl = document.getElementById("result");
-                spanEl.innerHTML = `<b>${result}</b>`;
-            }
-        </script>
-
-    </section>-->
-
-
-
-
-
-    <!--Problem E-->
-    <!--<div class="row">
-        E)-->
-        <!--Input Field 1-->
-        <!--<div class="col">
-            <input type="text" id="num1" />
+    <!--HTML for Question 3-->
+    <section>
+        <div class="container">
+            <b>3) Write a program that accepts TWO numbers between 1 and 100 from the user. The program then iterates through all numbers from 1 to 100, printing numbers in ascending order to the screen. For each number that is a multiple of the first number input by the user, print "Fizz" instead of the number. For each number that is a multiple of the second number input by the user, print "Buzz" instead of the number. For numbers that are multiples of both number, print "FizzBuzz" instead of the number.</b>
+            <div class="row">
+                <!--Input Field 1-->
+                <div class="col">
+                    <input type="text" id="" />
+                </div>
+                <!--Input Field 2-->
+                <div class="col">
+                    <input type="text" id="" />
+                </div>
+                <!--Equals Button-->
+                <div class="col text-center">
+                    <button onclick="functionName()">=</button>
+                </div>
+                <!--Where my answer should appear-->
+                <div class="col">
+                    <span id="resultOfQ3"></span>
+                </div>
+            </div>
         </div>
-        +-->
-        <!--Input Field 2-->
-        <!--<div class="col">
-            <input type="text" id="num2" />
-        </div>-->
-        <!--Equals Button-->
-        <!--<div class="col text-center">
-            <button onclick="sumOfNumbers()">=</button>
+    </section>
+
+    <!--Take this out later-->
+    <br />
+
+    <!--HTML for Question 4-->
+    <section>
+        <div class="container">
+            <b>4) Write a program that determines whether a word is a Palindrome (the same forwards and backwards).</b>
+            <div class="row">
+                <!--Input Field 1-->
+                <div class="col">
+                    <input type="text" id="" />
+                </div>
+                <!--Equals Button-->
+                <div class="col text-center">
+                    <button onclick="functionName()">=</button>
+                </div>
+                <!--Where my answer should appear-->
+                <div class="col">
+                    <span id="resultOfQ4"></span>
+                </div>
+            </div>
         </div>
-        <br />
-        <br />-->
-        <!--Where my answer should appear-->
-        <!--<div class="col">
-            <span id="result"></span>
-        </div>
-    </div>-->
+    </section>
+
+    <!--Take this out later-->
+    <br />
 
 
 
 
+    <!--JS Scripts-->
+
+    <script>
+        //Function 1-A
+        function leastOfNumbers() {
+            let a1 = Number(document.getElementById("IFa1").value)
+            let a2 = Number(document.getElementById("IFa2").value)
+            let a3 = Number(document.getElementById("IFa3").value)
+            let a4 = Number(document.getElementById("IFa4").value)
+            let a5 = Number(document.getElementById("IFa5").value)
+            let resultOfA = Math.min(a1, a2, a3, a4, a5)
+            let spanEl = document.getElementById("resultOfA");
+            spanEl.innerHTML = `<b>${resultOfA}</b>`;
+        }
+
+        //Function 1-B
+        function greatestOfNumbers() {
+            let b1 = Number(document.getElementById("IFb1").value)
+            let b2 = Number(document.getElementById("IFb2").value)
+            let b3 = Number(document.getElementById("IFb3").value)
+            let b4 = Number(document.getElementById("IFb4").value)
+            let b5 = Number(document.getElementById("IFb5").value)
+            let resultOfB = Math.max(b1, b2, b3, b4, b5)
+            let spanEl = document.getElementById("resultOfB");
+            spanEl.innerHTML = `<b>${resultOfB}</b>`;
+        }
+
+        //Function 1-C
+        function meanOfNumbers() {
+            let c1 = Number(document.getElementById("IFc1").value);
+            let c2 = Number(document.getElementById("IFc2").value);
+            let c3 = Number(document.getElementById("IFc3").value);
+            let c4 = Number(document.getElementById("IFc4").value);
+            let c5 = Number(document.getElementById("IFc5").value);
+            let entries = [c1, c2, c3, c4, c5];
+            //let sum = entries.reduce( );
+            let sum = entries.reduce(function (sum, secondParameter) {
+                return sum += secondParameter;
+            });
+            let avg = sum / entries.length;
+            let resultOfC = avg;
+            let spanEl = document.getElementById("resultOfC");
+            spanEl.innerHTML = `<b>${resultOfC}</b>`;
+        }
+
+        //Function 1-D
+        function sumOfNumbers() {
+            let d1 = Number(document.getElementById("IFd1").value);
+            let d2 = Number(document.getElementById("IFd2").value);
+            let d3 = Number(document.getElementById("IFd3").value);
+            let d4 = Number(document.getElementById("IFd4").value);
+            let d5 = Number(document.getElementById("IFd5").value);
+            let entries = [d1, d2, d3, d4, d5];
+            let sum = entries.reduce(function (sum, secondParameter) {
+                return sum += secondParameter;
+            });
+            let resultOfD = sum;
+            let spanEl = document.getElementById("resultOfD");
+            spanEl.innerHTML = `<b>${resultOfD}</b>`;
+        }
+
+        //Function 1-E
+        function productOfNumbers() {
+            let e1 = Number(document.getElementById("IFe1").value);
+            let e2 = Number(document.getElementById("IFe2").value);
+            let e3 = Number(document.getElementById("IFe3").value);
+            let e4 = Number(document.getElementById("IFe4").value);
+            let e5 = Number(document.getElementById("IFe5").value);
+            let entries = [e1, e2, e3, e4, e5];
+            let sum = entries.reduce(function (sum, secondParameter) {
+                return sum *= secondParameter;
+            });
+            let resultOfE = sum;
+            let spanEl = document.getElementById("resultOfE");
+            spanEl.innerHTML = `<b>${resultOfE}</b>`;
+        }
 
 
 
 
+        //Function 2 (Factorial of a number)
+        let entryQ2 = Number(document.getElementById("IFQ2").value);
+
+        function factorialofANumber(entryQ2) {
 
 
+            if (entryQ2 > 0 || entryQ2 == 1) {
+                return 1;
+            } else {
+                return entryQ2 * factorialofANumber(entryQ2 - 1);
+            }
+        }
 
-</section>
+        let resultOfQ2 = entryQ2;
+        let spanEl = document.getElementById("resultOfQ2");
+        spanEl.innerHTML = `<b>${resultOfQ2}</b>`;
+
+    </script>
+
+
     <!-- Bootstrap core JavaScript -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
