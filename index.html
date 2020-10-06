@@ -240,54 +240,93 @@
                     </div>
                 </div>
             </div>
+            <!--Take this out later-->
+            <br />
 
             <!--Problem D-->
-            <div class="row">
-                D)
-                <!--Input Field 1-->
-                <div class="col">
-                    <input type="text" id="num1" />
-                </div>
-                +
-                <!--Input Field 2-->
-                <div class="col">
-                    <input type="text" id="num2" />
-                </div>
-                <!--Equals Button-->
-                <div class="col text-center">
-                    <button onclick="sumOfNumbers()">=</button>
-                </div>
-                <br />
-                <br />
-                <!--Where my answer should appear-->
-                <div class="col">
-                    <span id="result"></span>
-                </div>
-            </div>
+            <div class="container">
+                <div class="row">
+                    D)
+                    <!--Input Field 1-->
+                    <div class="col">
+                        <input type="text" id="IFd1" />
+                    </div>
 
-            <!--Problem E-->
-            <div class="row">
-                E)
-                <!--Input Field 1-->
-                <div class="col">
-                    <input type="text" id="num1" />
-                </div>
-                +
-                <!--Input Field 2-->
-                <div class="col">
-                    <input type="text" id="num2" />
-                </div>
-                <!--Equals Button-->
-                <div class="col text-center">
-                    <button onclick="sumOfNumbers()">=</button>
-                </div>
-                <br />
-                <br />
-                <!--Where my answer should appear-->
-                <div class="col">
-                    <span id="result"></span>
+                    <!--Input Field 2-->
+                    <div class="col">
+                        <input type="text" id="IFd2" />
+                    </div>
+
+                    <!--Input Field 3-->
+                    <div class="col">
+                        <input type="text" id="IFd3" />
+                    </div>
+
+                    <!--Input Field 4-->
+                    <div class="col">
+                        <input type="text" id="IFd4" />
+                    </div>
+
+                    <!--Input Field 5-->
+                    <div class="col">
+                        <input type="text" id="IFd5" />
+                    </div>
+
+                    <!--Equals Button-->
+                    <div class="col text-center">
+                        <button onclick="sumOfNumbers()">=</button>
+                    </div>
+
+                    <!--Where my answer should appear-->
+                    <div class="col">
+                        <span id="resultOfD"></span>
+                    </div>
                 </div>
             </div>
+            <!--Take this out later-->
+            <br />
+            <!--Problem E-->
+            <div class="container">
+                <div class="row">
+                    E)
+                    <!--Input Field 1-->
+                    <div class="col">
+                        <input type="text" id="IFe1" />
+                    </div>
+
+                    <!--Input Field 2-->
+                    <div class="col">
+                        <input type="text" id="IFe2" />
+                    </div>
+
+                    <!--Input Field 3-->
+                    <div class="col">
+                        <input type="text" id="IFe3" />
+                    </div>
+
+                    <!--Input Field 4-->
+                    <div class="col">
+                        <input type="text" id="IFe4" />
+                    </div>
+
+                    <!--Input Field 5-->
+                    <div class="col">
+                        <input type="text" id="IFe5" />
+                    </div>
+
+                    <!--Equals Button-->
+                    <div class="col text-center">
+                        <button onclick="sumOfNumbers()">=</button>
+                    </div>
+
+                    <!--Where my answer should appear-->
+                    <div class="col">
+                        <span id="resultOfE"></span>
+                    </div>
+                </div>
+            </div>
+            <!--Take this out later-->
+            <br />
         </div>
 
 
@@ -327,17 +366,48 @@
                 let c3 = Number(document.getElementById("IFc3").value);
                 let c4 = Number(document.getElementById("IFc4").value);
                 let c5 = Number(document.getElementById("IFc5").value);
-                let values = (c1, c2, c3, c4, c5);
-                let sum = values.sum
-                let avg = sum / values.length.value;
+                let entries = [c1, c2, c3, c4, c5];
+                //let sum = entries.reduce( );
+                let sum = entries.reduce(function(sum, secondParameter) {
+                    return sum += secondParameter;
+                });
+                let avg = sum / entries.length;
                 let resultOfC = avg;
                 let spanEl = document.getElementById("resultOfC");
                 spanEl.innerHTML = `<b>${resultOfC}</b>`;
             }
 
+        //Function D
+            function sumOfNumbers() {
+                let d1 = Number(document.getElementById("IFd1").value);
+                let d2 = Number(document.getElementById("IFd2").value);
+                let d3 = Number(document.getElementById("IFd3").value);
+                let d4 = Number(document.getElementById("IFd4").value);
+                let d5 = Number(document.getElementById("IFd5").value);
+                let entries = [d1, d2, d3, d4, d5];
+                let sum = entries.reduce(function (sum, secondParameter) {
+                    return sum += secondParameter;
+                });
+                let resultOfD = sum;
+                let spanEl = document.getElementById("resultOfD");
+                spanEl.innerHTML = `<b>${resultOfD}</b>`;
+            }
 
-
-
+        //Function E
+            function sumOfNumbers() {
+                let e1 = Number(document.getElementById("IFe1").value);
+                let e2 = Number(document.getElementById("IFe2").value);
+                let e3 = Number(document.getElementById("IFe3").value);
+                let e4 = Number(document.getElementById("IFe4").value);
+                let e5 = Number(document.getElementById("IFe5").value);
+                let entries = [e1, e2, e3, e4, e5];
+                let sum = entries.reduce(function (sum, secondParameter) {
+                    return sum *= secondParameter;
+                });
+                let resultOfE = sum;
+                let spanEl = document.getElementById("resultOfE");
+                spanEl.innerHTML = `<b>${resultOfE}</b>`;
+            }
 
         </script>
 
@@ -353,7 +423,7 @@
         
         
         
-        
+        <!--Example of simple function
         
         <script>
             function sumOfNumbers() {
@@ -365,7 +435,7 @@
             }
         </script>
 
-    </section>
+    </section>-->
 
 
 
@@ -405,7 +475,7 @@
 
 
 
-
+</section>
     <!-- Bootstrap core JavaScript -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
