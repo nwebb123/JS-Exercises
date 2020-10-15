@@ -8,18 +8,21 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Coder Foundry MiniSite Template</title>
+    <title>JavaScript Exercises</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!--Custom CSS-->
+    <link href="Styles/style.css" rel="stylesheet" />
 </head>
 
 <body>
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
-        <div class="container">
-            <a class="navbar-brand" href="/Index.html">Challenge Name Here</a>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/Index.html">JavaScript Exercises</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -31,19 +34,13 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/Solve.html">Solve</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="/Code.html">Code</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Git</a>
+                        <a class="nav-link" target="_blank" href="https://github.com/nwebb123/JS-Exercises">Git</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Blog Post/YouTube Explanation</a>
+                        <a class="nav-link" target="_blank" href="https://nickwebbportfolio.netlify.app/">Portfolio</a>
                     </li>
                 </ul>
             </div>
@@ -54,20 +51,15 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h1 class="mt-5">Javascript Exercises</h1>
-                <p class="lead"><!--You need to use a Syntax Highlighter - Prism.js is default--></p>
-                <ul class="list-unstyled">
-                    <li>Code with highlighter</li>
-                    <li>Will display on this page</li>
-                </ul>
+                <h1 class="mt-5">JavaScript Exercises</h1>
             </div>
         </div>
     </div>
 
     <!--HTML for Question 1-->
     <section>
-        <div class="container">
-            <b>1) Write a program that accepts a series of at least 5 numbers from the user and performs the following actions:</b>
+        <div class="container font-weight-bold">
+            1) Write a program that accepts a series of at least 5 numbers from the user and performs the following actions:
             <ul>
                 <li>A) Determine which number is the least</li>
                 <li>B) Determine which number is the greatest</li>
@@ -75,216 +67,217 @@
                 <li>D) Determine the sum of all the numbers</li>
                 <li>E) Determine the product of all the numbers</li>
             </ul>
-            <!--Problem A-->
-            <div class="container">
-                <div class="row">
-                    A)
-                    <!--Input Field 1-->
-                    <div class="col">
-                        <input type="text" id="IFa1" />
-                    </div>
-
-                    <!--Input Field 2-->
-                    <div class="col">
-                        <input type="text" id="IFa2" />
-                    </div>
-
-                    <!--Input Field 3-->
-                    <div class="col">
-                        <input type="text" id="IFa3" />
-                    </div>
-
-                    <!--Input Field 4-->
-                    <div class="col">
-                        <input type="text" id="IFa4" />
-                    </div>
-
-                    <!--Input Field 5-->
-                    <div class="col">
-                        <input type="text" id="IFa5" />
-                    </div>
-
-                    <!--Equals Button-->
-                    <div class="col text-center">
-                        <button onclick="leastOfNumbers()">=</button>
-                    </div>
-
-                    <!--Where my answer should appear-->
-                    <div class="col">
-                        <span id="resultOfA"></span>
-                    </div>
-                </div>
-            </div>
-            <!--Take this out later-->
-            <br />
-            <!--Problem B-->
-            <div class="container">
-                <div class="row">
-                    B)
-                    <!--Input Field 1-->
-                    <div class="col">
-                        <input type="text" id="IFb1" />
-                    </div>
-
-                    <!--Input Field 2-->
-                    <div class="col">
-                        <input type="text" id="IFb2" />
-                    </div>
-
-                    <!--Input Field 3-->
-                    <div class="col">
-                        <input type="text" id="IFb3" />
-                    </div>
-
-                    <!--Input Field 4-->
-                    <div class="col">
-                        <input type="text" id="IFb4" />
-                    </div>
-
-                    <!--Input Field 5-->
-                    <div class="col">
-                        <input type="text" id="IFb5" />
-                    </div>
-
-                    <!--Equals Button-->
-                    <div class="col text-center">
-                        <button onclick="greatestOfNumbers()">=</button>
-                    </div>
-
-                    <!--Where my answer should appear-->
-                    <div class="col">
-                        <span id="resultOfB"></span>
-                    </div>
-                </div>
-            </div>
-            <!--Take this out later-->
-            <br />
-            <!--Problem C-->
-            <div class="container">
-                <div class="row">
-                    C)
-                    <!--Input Field 1-->
-                    <div class="col">
-                        <input type="text" id="IFc1" />
-                    </div>
-
-                    <!--Input Field 2-->
-                    <div class="col">
-                        <input type="text" id="IFc2" />
-                    </div>
-
-                    <!--Input Field 3-->
-                    <div class="col">
-                        <input type="text" id="IFc3" />
-                    </div>
-
-                    <!--Input Field 4-->
-                    <div class="col">
-                        <input type="text" id="IFc4" />
-                    </div>
-
-                    <!--Input Field 5-->
-                    <div class="col">
-                        <input type="text" id="IFc5" />
-                    </div>
-
-                    <!--Equals Button-->
-                    <div class="col text-center">
-                        <button onclick="meanOfNumbers()">=</button>
-                    </div>
-
-                    <!--Where my answer should appear-->
-                    <div class="col">
-                        <span id="resultOfC"></span>
-                    </div>
-                </div>
-            </div>
-            <!--Take this out later-->
-            <br />
-            <!--Problem D-->
-            <div class="container">
-                <div class="row">
-                    D)
-                    <!--Input Field 1-->
-                    <div class="col">
-                        <input type="text" id="IFd1" />
-                    </div>
-
-                    <!--Input Field 2-->
-                    <div class="col">
-                        <input type="text" id="IFd2" />
-                    </div>
-
-                    <!--Input Field 3-->
-                    <div class="col">
-                        <input type="text" id="IFd3" />
-                    </div>
-
-                    <!--Input Field 4-->
-                    <div class="col">
-                        <input type="text" id="IFd4" />
-                    </div>
-
-                    <!--Input Field 5-->
-                    <div class="col">
-                        <input type="text" id="IFd5" />
-                    </div>
-
-                    <!--Equals Button-->
-                    <div class="col text-center">
-                        <button onclick="sumOfNumbers()">=</button>
-                    </div>
-
-                    <!--Where my answer should appear-->
-                    <div class="col">
-                        <span id="resultOfD"></span>
-                    </div>
-                </div>
-            </div>
-            <!--Take this out later-->
-            <br />
-            <!--Problem E-->
-            <div class="container">
-                <div class="row">
-                    E)
-                    <!--Input Field 1-->
-                    <div class="col">
-                        <input type="text" id="IFe1" />
-                    </div>
-
-                    <!--Input Field 2-->
-                    <div class="col">
-                        <input type="text" id="IFe2" />
-                    </div>
-
-                    <!--Input Field 3-->
-                    <div class="col">
-                        <input type="text" id="IFe3" />
-                    </div>
-
-                    <!--Input Field 4-->
-                    <div class="col">
-                        <input type="text" id="IFe4" />
-                    </div>
-
-                    <!--Input Field 5-->
-                    <div class="col">
-                        <input type="text" id="IFe5" />
-                    </div>
-
-                    <!--Equals Button-->
-                    <div class="col text-center">
-                        <button onclick="productOfNumbers()">=</button>
-                    </div>
-
-                    <!--Where my answer should appear-->
-                    <div class="col">
-                        <span id="resultOfE"></span>
-                    </div>
-                </div>
-            </div>
-
         </div>
+
+        <!--Problem A-->
+        <div class="container">
+            <div class="row">
+                A)
+                <!--Input Field 1-->
+                <div class="col">
+                    <input type="text" id="IFa1" />
+                </div>
+
+                <!--Input Field 2-->
+                <div class="col">
+                    <input type="text" id="IFa2" />
+                </div>
+
+                <!--Input Field 3-->
+                <div class="col">
+                    <input type="text" id="IFa3" />
+                </div>
+
+                <!--Input Field 4-->
+                <div class="col">
+                    <input type="text" id="IFa4" />
+                </div>
+
+                <!--Input Field 5-->
+                <div class="col">
+                    <input type="text" id="IFa5" />
+                </div>
+
+                <!--Equals Button-->
+                <div class="col text-center">
+                    <button onclick="leastOfNumbers()">=</button>
+                </div>
+
+                <!--Where my answer should appear-->
+                <div class="col">
+                    <span id="resultOfA"></span>
+                </div>
+            </div>
+        </div>
+        <!--Take this out later-->
+        <br />
+        <!--Problem B-->
+        <div class="container">
+            <div class="row">
+                B)
+                <!--Input Field 1-->
+                <div class="col">
+                    <input type="text" id="IFb1" />
+                </div>
+
+                <!--Input Field 2-->
+                <div class="col">
+                    <input type="text" id="IFb2" />
+                </div>
+
+                <!--Input Field 3-->
+                <div class="col">
+                    <input type="text" id="IFb3" />
+                </div>
+
+                <!--Input Field 4-->
+                <div class="col">
+                    <input type="text" id="IFb4" />
+                </div>
+
+                <!--Input Field 5-->
+                <div class="col">
+                    <input type="text" id="IFb5" />
+                </div>
+
+                <!--Equals Button-->
+                <div class="col text-center">
+                    <button onclick="greatestOfNumbers()">=</button>
+                </div>
+
+                <!--Where my answer should appear-->
+                <div class="col">
+                    <span id="resultOfB"></span>
+                </div>
+            </div>
+        </div>
+        <!--Take this out later-->
+        <br />
+        <!--Problem C-->
+        <div class="container">
+            <div class="row">
+                C)
+                <!--Input Field 1-->
+                <div class="col">
+                    <input type="text" id="IFc1" />
+                </div>
+
+                <!--Input Field 2-->
+                <div class="col">
+                    <input type="text" id="IFc2" />
+                </div>
+
+                <!--Input Field 3-->
+                <div class="col">
+                    <input type="text" id="IFc3" />
+                </div>
+
+                <!--Input Field 4-->
+                <div class="col">
+                    <input type="text" id="IFc4" />
+                </div>
+
+                <!--Input Field 5-->
+                <div class="col">
+                    <input type="text" id="IFc5" />
+                </div>
+
+                <!--Equals Button-->
+                <div class="col text-center">
+                    <button onclick="meanOfNumbers()">=</button>
+                </div>
+
+                <!--Where my answer should appear-->
+                <div class="col">
+                    <span id="resultOfC"></span>
+                </div>
+            </div>
+        </div>
+        <!--Take this out later-->
+        <br />
+        <!--Problem D-->
+        <div class="container">
+            <div class="row">
+                D)
+                <!--Input Field 1-->
+                <div class="col">
+                    <input type="text" id="IFd1" />
+                </div>
+
+                <!--Input Field 2-->
+                <div class="col">
+                    <input type="text" id="IFd2" />
+                </div>
+
+                <!--Input Field 3-->
+                <div class="col">
+                    <input type="text" id="IFd3" />
+                </div>
+
+                <!--Input Field 4-->
+                <div class="col">
+                    <input type="text" id="IFd4" />
+                </div>
+
+                <!--Input Field 5-->
+                <div class="col">
+                    <input type="text" id="IFd5" />
+                </div>
+
+                <!--Equals Button-->
+                <div class="col text-center">
+                    <button onclick="sumOfNumbers()">=</button>
+                </div>
+
+                <!--Where my answer should appear-->
+                <div class="col">
+                    <span id="resultOfD"></span>
+                </div>
+            </div>
+        </div>
+        <!--Take this out later-->
+        <br />
+        <!--Problem E-->
+        <div class="container">
+            <div class="row">
+                E)
+                <!--Input Field 1-->
+                <div class="col">
+                    <input type="text" id="IFe1" />
+                </div>
+
+                <!--Input Field 2-->
+                <div class="col">
+                    <input type="text" id="IFe2" />
+                </div>
+
+                <!--Input Field 3-->
+                <div class="col">
+                    <input type="text" id="IFe3" />
+                </div>
+
+                <!--Input Field 4-->
+                <div class="col">
+                    <input type="text" id="IFe4" />
+                </div>
+
+                <!--Input Field 5-->
+                <div class="col">
+                    <input type="text" id="IFe5" />
+                </div>
+
+                <!--Equals Button-->
+                <div class="col text-center">
+                    <button onclick="productOfNumbers()">=</button>
+                </div>
+
+                <!--Where my answer should appear-->
+                <div class="col">
+                    <span id="resultOfE"></span>
+                </div>
+            </div>
+        </div>
+
     </section>
 
     <!--Take this out later-->
@@ -300,7 +293,7 @@
                     <input type="text" id="IFQ2" />
                 </div>
                 <!--Equals Button-->
-                <div class="col text-center">
+                <div class="col">
                     <button onclick="factorialOfANumber()">=</button>
                 </div>
                 <!--Where my answer should appear-->
@@ -312,170 +305,77 @@
 
 
 
-       
+
     </section>
 
     <!--Take this out later-->
     <br />
 
     <!--HTML for Question 3-->
-    <section>
+    <!--<section>
         <div class="container">
             <b>3) Write a program that accepts TWO numbers between 1 and 100 from the user. The program then iterates through all numbers from 1 to 100, printing numbers in ascending order to the screen. For each number that is a multiple of the first number input by the user, print "Fizz" instead of the number. For each number that is a multiple of the second number input by the user, print "Buzz" instead of the number. For numbers that are multiples of both number, print "FizzBuzz" instead of the number.</b>
-            <div class="row">
-                <!--Input Field 1-->
-                <div class="col">
-                    <input type="text" id="" />
-                </div>
-                <!--Input Field 2-->
-                <div class="col">
-                    <input type="text" id="" />
-                </div>
-                <!--Equals Button-->
-                <div class="col text-center">
-                    <button onclick="functionName()">=</button>
-                </div>
-                <!--Where my answer should appear-->
-                <div class="col">
+            <div class="row">-->
+    <!--Input Field 1-->
+    <!--<div class="col">
+        <input type="text" id="" />
+    </div>-->
+    <!--Input Field 2-->
+    <!--<div class="col">
+        <input type="text" id="" />
+    </div>-->
+    <!--Equals Button-->
+    <!--<div class="col text-center">
+        <button onclick="functionName()">=</button>
+    </div>-->
+    <!--Where my answer should appear-->
+    <!--<div class="col">
                     <span id="resultOfQ3"></span>
                 </div>
             </div>
         </div>
-    </section>
-
+    </section>-->
     <!--Take this out later-->
     <br />
 
     <!--HTML for Question 4-->
-    <section>
+    <!--<section>
         <div class="container">
             <b>4) Write a program that determines whether a word is a Palindrome (the same forwards and backwards).</b>
-            <div class="row">
-                <!--Input Field 1-->
-                <div class="col">
-                    <input type="text" id="" />
-                </div>
-                <!--Equals Button-->
-                <div class="col text-center">
-                    <button onclick="functionName()">=</button>
-                </div>
-                <!--Where my answer should appear-->
-                <div class="col">
+            <div class="row">-->
+    <!--Input Field 1-->
+    <!--<div class="col">
+        <input type="text" id="" />
+    </div>-->
+    <!--Equals Button-->
+    <!--<div class="col text-center">
+        <button onclick="functionName()">=</button>
+    </div>-->
+    <!--Where my answer should appear-->
+    <!--<div class="col">
                     <span id="resultOfQ4"></span>
                 </div>
             </div>
         </div>
-    </section>
-
+    </section>-->
     <!--Take this out later-->
     <br />
 
 
 
 
-    <!--JS Scripts-->
-
-    <script>
-        //Function 1-A
-        function leastOfNumbers() {
-            let a1 = Number(document.getElementById("IFa1").value)
-            let a2 = Number(document.getElementById("IFa2").value)
-            let a3 = Number(document.getElementById("IFa3").value)
-            let a4 = Number(document.getElementById("IFa4").value)
-            let a5 = Number(document.getElementById("IFa5").value)
-            let resultOfA = Math.min(a1, a2, a3, a4, a5)
-            let spanEl = document.getElementById("resultOfA");
-            spanEl.innerHTML = `<b>${resultOfA}</b>`;
-        }
-
-        //Function 1-B
-        function greatestOfNumbers() {
-            let b1 = Number(document.getElementById("IFb1").value)
-            let b2 = Number(document.getElementById("IFb2").value)
-            let b3 = Number(document.getElementById("IFb3").value)
-            let b4 = Number(document.getElementById("IFb4").value)
-            let b5 = Number(document.getElementById("IFb5").value)
-            let resultOfB = Math.max(b1, b2, b3, b4, b5)
-            let spanEl = document.getElementById("resultOfB");
-            spanEl.innerHTML = `<b>${resultOfB}</b>`;
-        }
-
-        //Function 1-C
-        function meanOfNumbers() {
-            let c1 = Number(document.getElementById("IFc1").value);
-            let c2 = Number(document.getElementById("IFc2").value);
-            let c3 = Number(document.getElementById("IFc3").value);
-            let c4 = Number(document.getElementById("IFc4").value);
-            let c5 = Number(document.getElementById("IFc5").value);
-            let entries = [c1, c2, c3, c4, c5];
-            //let sum = entries.reduce( );
-            let sum = entries.reduce(function (sum, secondParameter) {
-                return sum += secondParameter;
-            });
-            let avg = sum / entries.length;
-            let resultOfC = avg;
-            let spanEl = document.getElementById("resultOfC");
-            spanEl.innerHTML = `<b>${resultOfC}</b>`;
-        }
-
-        //Function 1-D
-        function sumOfNumbers() {
-            let d1 = Number(document.getElementById("IFd1").value);
-            let d2 = Number(document.getElementById("IFd2").value);
-            let d3 = Number(document.getElementById("IFd3").value);
-            let d4 = Number(document.getElementById("IFd4").value);
-            let d5 = Number(document.getElementById("IFd5").value);
-            let entries = [d1, d2, d3, d4, d5];
-            let sum = entries.reduce(function (sum, secondParameter) {
-                return sum += secondParameter;
-            });
-            let resultOfD = sum;
-            let spanEl = document.getElementById("resultOfD");
-            spanEl.innerHTML = `<b>${resultOfD}</b>`;
-        }
-
-        //Function 1-E
-        function productOfNumbers() {
-            let e1 = Number(document.getElementById("IFe1").value);
-            let e2 = Number(document.getElementById("IFe2").value);
-            let e3 = Number(document.getElementById("IFe3").value);
-            let e4 = Number(document.getElementById("IFe4").value);
-            let e5 = Number(document.getElementById("IFe5").value);
-            let entries = [e1, e2, e3, e4, e5];
-            let sum = entries.reduce(function (sum, secondParameter) {
-                return sum *= secondParameter;
-            });
-            let resultOfE = sum;
-            let spanEl = document.getElementById("resultOfE");
-            spanEl.innerHTML = `<b>${resultOfE}</b>`;
-        }
 
 
-
-
-        //Function 2 (Factorial of a number)
-        let entryQ2 = Number(document.getElementById("IFQ2").value);
-
-        function factorialofANumber(entryQ2) {
-
-
-            if (entryQ2 > 0 || entryQ2 == 1) {
-                return 1;
-            } else {
-                return entryQ2 * factorialofANumber(entryQ2 - 1);
-            }
-        }
-
-        let resultOfQ2 = entryQ2;
-        let spanEl = document.getElementById("resultOfQ2");
-        spanEl.innerHTML = `<b>${resultOfQ2}</b>`;
-
-    </script>
 
 
     <!-- Bootstrap core JavaScript -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    
+    <!--JS Scripts-->
+    <script src="Scripts/script.js"></script>
+
+
 </body>
 
 </html>
