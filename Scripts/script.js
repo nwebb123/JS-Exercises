@@ -94,3 +94,39 @@ function factorialOfANumber() {
     let spanEl = document.getElementById("resultOfQ2");
     spanEl.innerHTML = `<b>${output}</b>`;
 }
+
+
+//Question 4 Code (Incomplete)
+var names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
+var par = Number(document.getElementById("parInput").value);
+var strokes = Number(document.getElementById("strokesInput").value);
+var q4Answer = "";
+function golfScore(par, strokes) {
+    if (strokes == 1) {
+        q4Answer = names[0];
+    }
+    else if (strokes <= par - 2) {
+        q4Answer = names[1];
+    }
+    else if (strokes == par - 1) {
+        q4Answer = names[2];
+    }
+    else if (strokes == par) {
+        q4Answer = names[3];
+    }
+    else if (strokes == par + 1) {
+        q4Answer = names[4];
+    }
+    else if (strokes == par + 2) {
+        q4Answer = names[5];
+    }
+    else if (strokes >= par + 3) {
+        q4Answer = names[6];
+    }
+    q4Answer = "Error";
+
+    let spanEl = document.getElementById("resultOfQ4")
+    spanEl.innerHTML = q4Answer;
+}
+
+

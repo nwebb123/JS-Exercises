@@ -286,7 +286,7 @@
     <!--HTML for Question 2-->
     <section>
         <div class="container">
-            <b>2) Write a program tha calculates the factorial of a number. The factorial of a non-negative integer <em>n</em> is the product of all positive integers less than or equal to <em>n</em>. <br />(Ex. 5! = 5x4x3x2x1 = 120)</b>
+            <b>2) Write a program that calculates the factorial of a number. The factorial of a non-negative integer <em>n</em> is the product of all positive integers less than or equal to <em>n</em>. <br />(Ex. 5! = 5x4x3x2x1 = 120)</b>
             <div class="row">
                 <!--Input Field-->
                 <div class="col">
@@ -314,7 +314,13 @@
     <!--HTML for Question 3-->
     <section>
         <div class="container">
-            <b>2) Write a program tha calculates the factorial of a number. The factorial of a non-negative integer <em>n</em> is the product of all positive integers less than or equal to <em>n</em>. <br />(Ex. 5! = 5x4x3x2x1 = 120)</b>
+            <b>
+                3) Write a program that takes a user's input to fill in the
+                missing words to the story (Like MadLibs). In one sentence, use
+                string concatenation. In the second sentence, use string interpolation.
+                The user also needs to know what part of speech (noun, verb, adjective) should go in the appropriate
+                field.
+            </b>
             <div class="row">
                 <!--Input Field-->
                 <div class="col">
@@ -338,7 +344,81 @@
     </section>
 
 
+    <!--HTML for Question 4-->
+    <section>
+        <div class="container">
+            <b>
+                4) In the game of golf each hole has a par, meaning the average number of strokes a golfer is expected to make in order to sink the
+                ball in a hole to complete the play. Depending on how far above or below par your strokes are, there is a different nickname.<br />
 
+                Your function will be passed <em>par</em> and <em>strokes</em> arguments. Par and strokes will always be numeric and positive. Return the correct string according to this table which
+                lists the strokes in order of priority; top (highest) to bottom (lowest): <br />
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <td>Strokes</td>
+                            <td>Return</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>"Hole-in-one!"</td>
+                        </tr>
+                        <tr>
+                            <td><= par - 2</td>
+                            <td>"Eagle"</td>
+                        </tr>
+                        <tr>
+                            <td>par - 1</td>
+                            <td>"Birdie"</td>
+                        </tr>
+                        <tr>
+                            <td>par</td>
+                            <td>"Par"</td>
+                        </tr>
+                        <tr>
+                            <td>par + 1</td>
+                            <td>"Bogey"</td>
+                        </tr>
+                        <tr>
+                            <td>par + 2</td>
+                            <td>"Double Bogey"</td>
+                        </tr>
+                        <tr>
+                            <td>>= par + 3</td>
+                            <td>"Go Home!"</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </b>
+            <div class="row">
+                <!--Input Field-->
+                <div class="col">
+                    <b>Par: </b>
+                    <input type="number" id="parInput" /><br />
+                    <b>Strokes: </b>
+                    <input type="number" id="strokesInput" />
+                    
+                </div>
+                <!--Equals Button-->
+                <div class="col">
+                    <button onclick="golfScore()">=</button>
+                </div>
+                <!--Where my answer should appear-->
+                <div class="col">
+                    <span id="resultOfQ4"></span>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Take this out later-->
+        <br />
+
+    </section>
 
 
 
