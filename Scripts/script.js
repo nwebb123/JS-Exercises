@@ -130,3 +130,22 @@ function golfScore(par, strokes) {
 }
 
 
+/*
+The purpose of this app is to convert a given temperature in Kelvin to Celsius as well as Fahrenheit. Built using vanilla JS.
+ */
+
+//Imagine today's forecast is 293 Kelvin.
+const kelvin = 293;
+
+//Celsius is similar to Kelvin (273 degrees less than Kelvin).
+const celsius = kelvin - 273;
+
+//Equation for Fahrenheit: F = C * (9/5) + 32
+let fahrenheit = celsius * (9 / 5) + 32;
+
+//If number is decimal, Math.floor() method will round decimal down.
+fahrenheit = Math.floor(fahrenheit);
+
+//Log the temperature in fahrenheit to the console
+
+//console.log(`The temperature is ${fahrenheit} degrees Fahrenheit`)
